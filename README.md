@@ -4,7 +4,7 @@ A LangGraph-based reflection agent that iteratively generates and refines high-q
 
 ## Overview
 
-This project implements a **reflection agent** - an AI system that improves its outputs by critiquing and refining them through multiple iterations. The agent consists of two specialized nodes working in tandem:
+This project implements a **reflection agent** - an AI agent that improves its outputs by critiquing and refining them through multiple iterations. The agent consists of two specialized nodes working in tandem:
 
 - **Generation Node**: Creates prompts based on user requirements and previous feedback
 - **Reflection Node**: Analyzes generated prompts and provides constructive critique with specific improvement suggestions
@@ -24,7 +24,7 @@ The reflection process works through alternating generation and critique loops:
 1. **Generate**: The agent creates an initial output based on the user's request
 2. **Reflect**: A second pass analyzes the output, identifying weaknesses and areas for improvement
 3. **Revise**: Using the critique, the agent generates an improved version
-4. **Repeat**: This cycle continues for a specified number of iterations or if not further suggestions are provided by the revisor
+4. **Repeat**: This cycle continues for a specified number of iterations
 
 By iteratively refining outputs and exploring multiple solution paths, reflection agents demonstrate significantly improved performance on complex reasoning and generation tasks.
 
