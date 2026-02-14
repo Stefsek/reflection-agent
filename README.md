@@ -97,7 +97,15 @@ ReflectionAgent/
 ├── utils/
 │   └── token_utils.py            # Token tracking and aggregation utilities
 ├── tests/
-│   ├── example_run.py            # Example test run script
+│   ├── example_run.py            # Example demo script
+│   └── example_run_images/       # Demo run screenshots and visualizations
+│       ├── generation_1.png
+│       ├── generation_2.png
+│       ├── generation_3.png
+│       ├── generation_4.png
+│       ├── reflections.png
+│       ├── tokens.png
+│       └── langsmith.png
 ├── visualizations/
 │   ├── visualize.py              # Script to generate workflow graph visualization
 │   └── reflection_agent_graph.png # Generated workflow diagram
@@ -107,7 +115,7 @@ ReflectionAgent/
 ├── pyproject.toml                # Project metadata and dependencies
 ├── uv.lock                       # UV lock file for reproducible builds
 ├── requirements.txt              # Project dependencies (pip compatible)
-└── README.md                     # Project Readme
+└── README.md                     # Project documentation
 ```
 
 ## Architecture
@@ -383,7 +391,7 @@ The agent completed **4 generation cycles** with **3 reflection rounds**, produc
 ### Generation Outputs
 
 #### Generation 1: Initial Framework
-![Generation 1](tests/demo_run/generation_1.png)
+![Generation 1](tests/example_run_images/generation_1.png)
 
 **Strengths**:
 - Established clear persona (Technical Support Specialist)
@@ -401,7 +409,7 @@ The agent completed **4 generation cycles** with **3 reflection rounds**, produc
 ---
 
 #### Generation 2: Scope & Efficiency Improvements
-![Generation 2](tests/demo_run/generation_2.png)
+![Generation 2](tests/example_run_images/generation_2.png)
 
 **New Features Added**:
 - **Pre-diagnostic phase**: Asks what user already attempted
@@ -421,7 +429,7 @@ The agent completed **4 generation cycles** with **3 reflection rounds**, produc
 ---
 
 #### Generation 3: Diagnostic Branching & Structure
-![Generation 3](tests/demo_run/generation_3.png)
+![Generation 3](tests/example_run_images/generation_3.png)
 
 **Major Structural Changes**:
 - **Markdown headers**: Clear phase separation to prevent LLM confusion
@@ -444,7 +452,7 @@ The agent completed **4 generation cycles** with **3 reflection rounds**, produc
 ---
 
 #### Generation 4: Safety, Verification & Accessibility
-![Generation 4](tests/demo_run/generation_4.png)
+![Generation 4](tests/example_run_images/generation_4.png)
 
 **Final Refinements**:
 - **Safety-first approach**: Warnings about wet hands and forcing cables
@@ -460,7 +468,7 @@ The agent completed **4 generation cycles** with **3 reflection rounds**, produc
 
 ### Reflection Analysis
 
-![Reflections Summary](tests/demo_run/reflections.png)
+![Reflections Summary](tests/example_run_images/reflections.png)
 
 The reflection node consistently provided:
 - **Critical analysis** identifying gaps in coverage and user experience
@@ -476,7 +484,7 @@ The reflection node consistently provided:
 
 ### Token Usage
 
-![Token Usage Statistics](tests/demo_run/tokens.png)
+![Token Usage Statistics](tests/example_run_images/tokens.png)
 
 | Metric | Generation Tokens | Reflection Tokens | Total Tokens |
 |--------|------------------|-------------------|--------------|
@@ -494,7 +502,7 @@ The reflection node consistently provided:
 
 ### LangSmith Tracing
 
-![LangSmith Trace](tests/demo_run/langsmith.png)
+![LangSmith Trace](tests/example_run_images/langsmith.png)
 
 The LangSmith trace provides full observability into the agent's execution:
 - **Complete conversation history** across all iterations
