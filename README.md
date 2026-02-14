@@ -130,7 +130,7 @@ The agent uses a two-node LangGraph workflow with conditional edges:
 3. **Decision Point** → Check if max iterations reached
    - If **No** → Continue to reflect_prompt
    - If **Yes** → End
-4. **reflect_prompt** → Analyzes the prompt and provides critique
+4. **reflect_prompt** → Analyzes the prompt and provides critique and improvement suggestions
 5. **Loop Back** → Reflection feedback feeds into next generation iteration
 
 ## Usage
@@ -142,7 +142,7 @@ from core.reflection_agent import ReflectionAgent
 
 # Initialize the agent
 agent = ReflectionAgent(
-    model_name="gemini-2.0-flash-exp",
+    model_name="gemini-3-flash-preview",
     temperature=0.7,
     max_iterations=2
 )
