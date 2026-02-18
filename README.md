@@ -491,7 +491,6 @@ The reflection node consistently provided:
 | **Input Tokens** | 6,307 | 5,073 | 11,380 |
 | **Output Tokens** | 4,660 | 1,984 | 6,644 |
 | **Total Tokens** | 10,967 | 7,057 | 18,024 |
-| **Requests** | 4 | 3 | 7 |
 
 **Cost Analysis** (approximate, based on Gemini 2.5 Flash pricing):
 - Total tokens: ~18K tokens
